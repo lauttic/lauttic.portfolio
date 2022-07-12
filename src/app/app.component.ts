@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-portfolioLC';
+
+  public sobreMi:boolean = false
+  public skills:boolean = false
+
+    constructor (){
+
+    }
+
+    ngOnInit(): void {
+
+    }
+
+    mostrarSobreMi(){
+      this.sobreMi = true
+      this.skills = false
+    }
+
+    mostrarSkills() {
+      this.skills = true;
+      this.sobreMi = false
+    }
 }

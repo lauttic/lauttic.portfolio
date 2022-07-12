@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BodyComponent } from './body/body.component';
+import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BodyComponent
+    BodyComponent,
+    SobreMiComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

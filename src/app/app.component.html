@@ -2,14 +2,14 @@
   <nav class="sidebar-navigation">
     <div>
       <ul>
-        <li class="active">
+        <li class="active" >
           <img id="photo" src="../../assets/letraL.jpg" alt="">
         </li>
-        <li>
+        <li (click)="mostrarSobreMi()">
           <img class="icons" src="../../assets/gamer.png" alt="">
           <span class="tooltip">Sobre mi</span>
         </li>
-        <li>
+        <li (click)="mostrarSkills()">
           <img class="icons" src="../../assets/tools.png" alt="">
           <span class="tooltip">Skills</span>
         </li>
@@ -30,11 +30,16 @@
     </div>
   </nav>
 
-  <div id="home" class="container d-flex justify-content-center m-5 align-items-center">
-    <h1 class="text-center">Bienvenidx a mi sitio web</h1>
-  </div>
+<app-body id="home" class="container d-flex justify-content-center m-5 align-items-center"
+*ngIf="sobreMi === false && skills === false"></app-body>
 
+<app-sobre-mi class="container d-flex justify-content-center m-5 align-items-center animate__animated animate__bounceIn"
+*ngIf="sobreMi === true && skills === false"></app-sobre-mi>
+
+<app-skills class="container d-flex justify-content-center align-items-center animate__animated animate__bounceIn"
+*ngIf="skills === true && sobreMi === false"></app-skills>
 
 </body>
+
 
 <router-outlet></router-outlet>

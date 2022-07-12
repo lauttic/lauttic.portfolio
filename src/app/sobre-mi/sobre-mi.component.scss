@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+  background-color: #51bde1;
+
+}
+
+#tarjeta {
+  border: 2px solid #fddc16;
+  box-shadow: 30px 30px 40px #de8f47;
+  border-radius: 20px;
+  background-color: white;
+}
+
+#foto {
+border-radius: 20px 0 0 20px;
+}
+
+h2 {
+font-family: Bangers, sans-serif;
+color: #de8f47;
+}
+
+@media (max-width: 850px) {
+  #tarjeta {
+    flex-direction: column-reverse;
+
+  }
+  #foto {
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 280px;
+  }
+}
+
+
