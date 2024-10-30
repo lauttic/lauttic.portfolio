@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs/",
+            "outputPath": "dist/",
             "index": "docs/index.html",
             "main": "docs/main.ts",
             "polyfills": "docs/polyfills.ts",
@@ -116,6 +116,9 @@
               "node_modules/jquery/dist/jquery.min.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
